@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Whitehat</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/gacon.png" />
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> <!-- link thư viện https://fontawesome.com/start -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+    <style>
+body{
+  background-color: #fafafa;
+}
+#logo-menu img{
+  width: 18px;
+  height: 18px;
+
+}
+.t1{
+  background-color: white;
+}
+#cot1 img{
+  width: 19px;
+  height: 19px;
+  padding: 0px;
+
+}
+#cot1 li a img:hover{
+  color: orange;
+}
+#cot3 img {
+  margin : 0px;
+}
+
+#cam  a:hover {
+  
+  color: orange;
+}
+.cam p:hover{
+  color: orange;
+}
+.mu a span:hover{
+  color: orange;
+}
+.mu ul li a span:hover{
+  color: orange;
+}
+.cam a span:hover{
+  color: orange;
+}
+.menucam ul li a span:hover  {
+  
+  color: orange;
+}
+#kecam{
+  padding: 0px;
+  border-bottom: solid 1px #ff9800;
+}
+#xulimenu{
+  background: white;
+  border: none ;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+.xulislide{
+  width: 555px;
+  height: 2px;
+}
+.nentrang{
+  background-color: red;
+  border: solid 1px #ff9800;
+}
+.mo img:hover{
+  opacity: 0.7;
+  
+}
+
+ul li:hover{
+  color: orange;
+}
+.uncot img{
+  width: 100%;
+  
+}
+.mocam:hover {
+  opacity: 0.8;
+  color: orange;
+}
+
+.slideht{
+  width: 180px;
+   background-color: white;
+  border: solid 1px #f5ecec;
+
+}
+
+.anh4{
+  width: 160px;
+  height: 160px;
+}
+
+.anhht{
+  width: 100%;
+  height: auto;
+}
+ul li{
+  list-style: none;
+}
+
+.scrollbar
+{/*cả thanh cuộn */
+  
+  
+  height: 280px;
+  width: 100%;
+  background: #F5F5F5; /*nền trong list*/
+  overflow-y: scroll;
+  margin-bottom: 25px;
+}
+
+.force-overflow
+{
+  min-height: 180px;
+}
+
+
+
+
+
+#style-4::-webkit-scrollbar-track  /* hiện thị màu sắc thanh cuộn*/
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: white;/*nền cuộn*/
+}
+
+#style-4::-webkit-scrollbar
+{
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+#style-4::-webkit-scrollbar-thumb
+{
+  background-color: gray; /* màu nền thanh cuộn*/
+  border: 2px solid gray;  /* màu viền thanh cuộn*/
+}
+
+
+</style>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  
+  <div id="kecam" class="t1" >
+<div class="container" >
+
+<div class="t1" class="container" >
+  <div class="thanh1"  class="container" >
+    <div class="row">
+      <div class="col-md-4 col-xs-6 " ><img src="img/logo.png"></div>
+      <div class="col-md-4  hidden-sm hidden-xs  " style="margin-top: 15px;">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Nhập từ khóa tìm kiếm" >
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">
+                <span class="glyphicon glyphicon-search" >
+                  
+                </span>
+              </button>
+            </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-5 -->
+      <div class="col-md-4 col-sm-4 hidden-sm hidden-xs cam  "style="margin-top: 20px; "  ><a href=""  ><i class="fas fa-user-circle"></i><span> &nbsp Đăng nhâp</span></a></div>
+   <div class="col-sm-4  col-xs-4 hidden-md hidden-lg  "style="margin-top: 20px; float: right; text-align: end;"  ><a href=""  ><i class="fas fa-user-circle"></i> </a></div>
+</div><!-- /.row -->
+   
+  </div>
+
+  <hr style="margin: 0px; padding: 0px; " >
+
+  <div class="col-xs-12 col-sm-12 hidden-md hidden-lg  " id="xulimenu" >
+    <div class="input-group" >
+      <input type="text" class="form-control" placeholder="Nhập từ khóa tìm kiếm" >
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">
+          <img src="img/search.png" style="width: 16px ; height: 16px margin:0px; ">
+        </button>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-5 -->
+ <nav class="navbar navbar-default" role="navigation" id="xulimenu">
+  <div class="container-fluid  ">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header mu" >
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" >
+        <img src="https://i.vietnamdoc.net/data/image/icon/menu.png" class="hidden-xs " >
+          <span>&nbsp Trang Chủ</span>
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse mu" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav" id="logo-menu"  >
+        
+        
+        <li><a href="#"" ><img src="img/ht.png"><span> &nbsp Học tập</span></a></li>
+        <li><a href="#"><img src="img/gbt.png"><span> &nbsp Giải bài tập</span></a></li>
+        <li><a href="#"><img src="img/tn.png"><span> &nbsp Trắc nhiệm</span></a></li>
+        <li><a href="#"><img src="img/ta.png"><span> &nbsp Tiếng anh</span></a></li>
+        <li><a href="#"><img src="img/tl.png"><span>&nbsp Tài liệu</span></a></li>
+        <li><a href="#"><img src="img/bm.png"><span> &nbsp Biểu mẫu</span></a></li>
+        <li><a href="#"><img src="img/pl.png"><span> &nbsp Pháp luật</span></a></li>
+        <li><a href="#"><img src="img/gacon.png"><span>&nbsp Khóa học</span></a></li>
+      </ul>
+      
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
+
+</div>
+</div>
+ <br>
+
+<div class="container" style=" margin-top: 20px" >
+<div class="t2" class="container" >
+
+  
+</div>
+  <div class="row"  >
+    <div class="col-md-2 menucam   hidden-sm hidden-xs   "    style="background-color: white">
+      <ul class="nav nav-pills nav-stacked" id="cot1" style="font-size: 12px;" >
+        <li><a href=""><img src="img/ht.png"  ><span> &nbsp Học tập</span></a></li>
+        <li><a href=""><img src="img/tn.png"><span> &nbsp Trắc nhiệm</span></a></li>
+        <li><a href=""><img src="img/gbt.png"><span> &nbsp Giải bài tập</span></a></li>
+        <li><a href=""><img src="img/ta.png"><span> &nbsp Tiếng anh</span></a></li>
+        <li><a href=""><img src="https://i.vietnamdoc.net/data/image/2019/05/07/education-size-32x32-znd.png"><span> &nbsp Thư viện đề thi</span></a></li>
+        <li><a href=""><img src="img/bm.png"><span> &nbsp Biểu mẫu</span></a></li>
+        <li><a href=""><img src="img/pl.png"><span> &nbsp Văn bản pháp luật</span></a></li>
+        <li><a href=""><img src="img/tl.png"><span> &nbsp Tài liệu</span></a></li>
+        <li><a href=""><img src="img/ga.png"><span> &nbsp Giáo án - Bài giảng</span></a></li>
+        <li><a href=""><img src="img/yh.png"><span> &nbsp Y học - Sức khỏe</span></a></li>
+        <li><a href=""><img src="img/s.png"><span> &nbsp Sách</span></a></li>
+      </ul>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-6 " class="slide" >
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+   <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+    
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img class="xulislide"  src="img/slide.jpg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img/slide.jpg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    ...
+    <div class="item">
+      <img src="img/slide.jpg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    ...
+    <div class="item">
+      <img src="img/slide.jpg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    ...
+    <div class="item">
+      <img src="img/slide.jpg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    ...
+    <div class="item">
+      <img src="img/slide.jpg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    ...
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+    </div>
+    <div class="col-sm-6 col-md-4" class="container"  id="cot3" >
+      <ul class="nav nav-pills nav-stacked" >
+        <li>
+          <div class="card mb-3" style="max-width: 500px;">  
+            <div class="row no-gutters">
+                  <div class="col-md-3 col-xs-3 mo "  >
+                 <img src="img/c31.png">
+                  </div>
+                <div class="col-md-9 col-xs-9" style="padding-left: 28px;">
+                  <div class="card-body cam ">
+                    <p class="card-text">
+                       Đề thi tuyển sinh vào lớp 10 môn Toán trường Phổ Thông Năng Khiếu, Thành Phố Hồ Chí Minh </p>
+                  </div>
+                </div>
+               </div>
+        </div>
+        </li>
+
+        <li>
+          <div class="card mb-3" style="max-width: 500px;">  
+            <div class="row no-gutters">
+                  <div class="col-md-3  col-xs-3  mo  ">
+                 <img src="img/c32.png">
+                  </div>
+                <div class="col-md-9  col-xs-9" style="padding-left: 28px;">
+                  <div class="card-body cam ">
+                    <p class="card-text">Đề thi tuyển sinh vào lớp 10 môn Toán trường Phổ Thông Năng Khiếu, Thành Phố Hồ Chí Minh năm học 2019 -</p>
+                  </div>
+                </div>
+               </div>
+        </div>
+        </li>
+
+        <li>
+          <div class="card mb-3" style="max-width: 500px;">  
+            <div class="row no-gutters">
+                  <div class="col-md-3 col-xs-3 mo "  >
+                 <img src="img/c34.png">
+                  </div>
+                <div class="col-md-9 col-xs-9" style="padding-left: 28px;">
+                  <div class="card-body cam ">
+                    <p class="card-text">
+                       Đề thi tuyển sinh vào lớp 10 môn Hóa học THPT Chuyên Sở GD&ĐT Hưng Yên năm học 2019 - </p>
+                  </div>
+                </div>
+               </div>
+        </div>
+        </li>
+
+        <li>
+          <div class="card mb-3" style="max-width: 500px;">  
+            <div class="row no-gutters">
+                  <div class="col-md-3 col-xs-3 mo "  >
+                 <img src="img/c33.png">
+                  </div>
+                <div class="col-md-9 col-xs-9" style="padding-left: 28px;">
+                  <div class="card-body cam ">
+                    <p class="card-text">
+                       Đáp án đề thi tuyển sinh vào lớp 10 môn Toán trường THPT Chuyên Sư Phạm Hà Nội năm học </p>
+                  </div>
+                </div>
+               </div>
+        </div>
+        </li>
+
+       
+      </ul>
+    </div>
+  </div>
+
+
+
+  <div class="row">
+    <div class="col-sm-4 col-md-3 col-xs-12 ">
+     <div class=" mo uncot"  ">
+        <img class="im-responsive" src="https://i.vietnamdoc.net/data/image/2015/12/26/de-thi-hki-1-mon-toan-lop-5-tran-thoi-600-size-320x160-znd.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title"><b>Học Tập</b></h4>
+            <p class="card-text"> Đề thi, bài văn mẫu, lý thuyết các môn học, luyện thi các môn học </p>
+    
+        </div >
+    </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3 col-xs-12">
+     <div class=" mo uncot" >
+        <img class="im-responsive" src="https://i.vietnamdoc.net/data/image/2016/02/22/tong-hop-toan-bo-tu-vung-va-ngu-phap-tieng-anh-lop-12-600-size-320x160-znd.png">
+        <div class="card-body">
+          <h4 class="card-title"><b>Khóa học</b></h4>
+            <p class="card-text"> Học tiếng anh, học toán trực tuyến đơn giản và hiệu quả với VnDoc.com  </p>
+    
+        </div >
+    </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3 col-xs-12">
+     <div class=" mo uncot" >
+       <img src="https://i.vietnamdoc.net/data/image/2016/07/29/trac-nghiem-tu-duy-logic-a-600-size-320x160-znd.jpg">
+        <div class="card-body">
+          <h4 class="card-title"><b>Trắc nhiệm</b></h4>
+            <p class="card-text"> Thi thử các đề thi trắc nghiệm vui, test IQ, kiểm tra luật giao thông </p>
+    
+        </div >
+    </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3 col-xs-12">
+     <div class=" mo uncot" >
+        <img src="https://i.vietnamdoc.net/data/image/2017/09/14/giai-bai-tap-sgk-cac-lop-size-320x160-znd.jpg">
+        <div class="card-body">
+          <h4 class="card-title"><b>Giả bài Tập</b></h4>
+            <p class="card-text">Giải bài tập sách giáo khoa, toán, tiếng anh, vật lý, hóa học, Sinh học,
+        </div >
+    </div>
+    </div>
+
+
+
+     <div class="col-sm-4 col-md-3 col-xs-12">
+     <div class=" mo uncot" >
+        <img src="https://i.vietnamdoc.net/data/image/2017/09/16/tai-lieu-on-thi-tieng-anh-trinh-do-a-cho-tuyen-vien-chuc-giao-duc-600-size-320x160-znd.jpg">
+        <div class="card-body">
+          <h4 class="card-title"><b>Tiếng anh</b></h4>
+            <p class="card-text"> Tài liệu học tiếng anh, đề thi TOEFL, IELTS, TOEIC ... </p>
+    
+        </div >
+    </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3 col-xs-12">
+     <div class=" mo uncot" >
+        <img src="https://i.vietnamdoc.net/data/image/2017/12/25/tong-hop-thu-hoi-chi-sai-bao-hiem-xa-hoi-bao-hiem-that-nghiep-bao-hiem-y-te-nam-truoc-600-size-320x160-znd.jpg">
+        <div class="card-body">
+          <h4 class="card-title"><b>Biểu mẫu</b></h4>
+            <p class="card-text"> Biểu mẫu tài liệu, văn bản, kiểu trang trí, định dạng văn bản. </p>
+    
+        </div >
+    </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3 col-xs-12">
+     <div class=" mo uncot" >
+        <img src="https://i.vietnamdoc.net/data/image/2015/10/12/Luat-thuong-mai-36-2005-QH11-600-size-320x160-znd.jpg">
+        <div class="card-body">
+          <h4 class="card-title"><b>Văn bản pháp luật</b></h4>
+            <p class="card-text"> Văn bản luật, nghị định, thông tư, công văn mới .</p>
+    
+        </div >
+    </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3 col-xs-12">
+     <div class=" mo uncot" >
+        <img src="https://i.vietnamdoc.net/data/image/2015/10/14/cach-chuyen-doi-tu-hien-tai-hoan-thanh-sang-qua-khu-don-va-nguoc-lai-to-size-320x160-znd.jpg">
+        <div class="card-body">
+          <h4 class="card-title"><b>Tài liệu</b></h4>
+            <p class="card-text"> Tổng hợp tài liệu, tài chính ngân hàng, CNTT, ngoại ngữ, khoa </p>
+    
+        </div >
+    </div>
+    </div>
+
+  
+</div>
+</div>
+
+  <div class="container" >
+    <div class="row">
+      <div class="col-md-2  hidden-sm hidden-xs ">
+          <div class="slideht" ><a href=""><img src="img/ht.png"> Học tập </a></div>
+          <div style=" width: 100%; height: 440px;" class="scrollbar" id="style-4">
+              <div class=" menucam   hidden-sm hidden-xs force-overflow  "    style="background-color: white">
+                <ul class="nav nav-pills nav-stacked" id="cot1" style="font-size: 12px;" >
+                    <li><a href=""><img src="img/ht.png"  ><span> &nbsp Học tập</span></a></li>
+                    <li><a href=""><img src="img/tn.png"><span> &nbsp Trắc nhiệm</span></a></li>
+                    <li><a href=""><img src="img/gbt.png"><span> &nbsp Giải bài tập</span></a></li>
+                    <li><a href=""><img src="img/ta.png"><span> &nbsp Tiếng anh</span></a></li>
+                    <li><a href=""><img src="https://i.vietnamdoc.net/data/image/2019/05/07/education-size-32x32-znd.png"><span> &nbsp Thư viện đề thi</span></a></li>
+                    <li><a href=""><img src="img/bm.png"><span> &nbsp Biểu mẫu</span></a></li>
+                    <li><a href=""><img src="img/pl.png"><span> &nbsp Văn bản pháp luật</span></a></li>
+                    <li><a href=""><img src="img/tl.png"><span> &nbsp Tài liệu</span></a></li>
+                    <li><a href=""><img src="img/ga.png"><span> &nbsp Giáo án - Bài giảng</span></a></li>
+                    <li><a href=""><img src="img/yh.png"><span> &nbsp Y học - Sức khỏe</span></a></li>
+                    <li><a href=""><img src="img/s.png"><span> &nbsp Sách</span></a></li>
+                    <li><a href=""><img src="img/yh.png"><span> &nbsp Y học - Sức khỏe</span></a></li>
+                    <li><a href=""><img src="img/s.png"><span> &nbsp Sách</span></a></li>
+                    <li><a href=""><img src="img/yh.png"><span> &nbsp Y học - Sức khỏe</span></a></li>
+                    <li><a href=""><img src="img/s.png"><span> &nbsp Sách</span></a></li>
+                </ul>
+      </div>
+   
+
+          </div>
+      </div>
+      <div class="col-md-10" style="border: solid 1px #f5ecec; padding-top: 10px;
+" >
+
+        <div class=" col-xs-12 col-md-2 mocam " >
+          <img class="anhht" src="https://i.vietnamdoc.net/data/image/Icon/icon200/Mon-Ngu-Van3.png " class="anh4" alt="Tập đọc lớp 3: Nhớ Việt Bắc">
+          <div class="card-body">
+            
+            <span class="app-description">Đề thi thử THPT Quốc gia môn Ngữ văn năm 2019 Sở GD&amp;ĐT Nam Định</span>
+           </div>
+        </div>
+
+        <div class=" col-xs-12 col-md-2 mocam" >
+          <img class="anhht" src="https://i.vietnamdoc.net/data/image/Icon/icon200/Mon-Tieng-Anh-TH2.png" alt="Kiểm tra Tiếng Anh lớp 1 lần 2">
+          <div class="card-body">
+            
+            <span class="app-description">Đề thi thử THPT Quốc gia môn Ngữ văn năm 2019 Sở GD&amp;ĐT Nam Định</span>
+           </div>
+        </div>
+
+        <div class=" col-xs-12 col-md-2 mocam" >
+          <img class="anhht" src="https://i.vietnamdoc.net/data/image/Icon/icon200/Mon-Toan-PT4.png" alt="Đề thi thử THPT Quốc gia môn Toán năm 2019 Sở GD&amp;ĐT Nam Định">
+          <div class="card-body">
+            
+            <span class="app-description">Đề thi thử THPT Quốc gia môn Ngữ văn năm 2019 Sở GD&amp;ĐT Nam Định</span>
+           </div>
+        </div>
+
+        <div class=" col-xs-12 col-md-2 mocam " >
+          <img class="anhht" src="https://i.vietnamdoc.net/data/image/Icon/icon200/Mon-Toan5.png" alt="Đề luyện thi vào lớp 6 môn Toán năm 2018 - 2019 - Đề số 5">
+          <div class="card-body">
+            
+            <span class="app-description">Đề thi thử THPT Quốc gia môn Ngữ văn năm 2019 Sở GD&amp;ĐT Nam Định</span>
+           </div>
+        </div>
+
+        <div class=" col-xs-12 col-md-2 mocam " >
+          <img class="anhht" src="https://i.vietnamdoc.net/data/image/Icon/icon200/Mon-Toan-PT2.png" alt="Đề thi tuyển sinh vào lớp 10 môn Toán THPT Chuyên Sở GD&amp;ĐT Hà Nam năm học 2019 - 2020 (đề chung)">
+          <div class="card-body">
+            
+            <span class="app-description">Đề thi thử THPT Quốc gia môn Ngữ văn năm 2019 Sở GD&amp;ĐT Nam Định</span>
+           </div>
+        </div>
+ 
+        <div class=" col-xs-12 col-md-2 mocam">
+          <img class="anhht" src="https://i.vietnamdoc.net/data/image/Icon/icon200/Mon-Sinh-hoc3.png" alt="Đề thi tuyển sinh vào lớp 10 môn Sinh học THPT Chuyên Sư Phạm Hà Nội năm học 2019 - 2020 (chuyên Sinh)">
+          <div class="card-body">
+            
+            <span class="app-description">Đề thi thử THPT Quốc gia môn Ngữ văn năm 2019 Sở GD&amp;ĐT Nam Định</span>
+           </div>
+        </div>
+
+        <div class=" col-xs-12 col-md-2 mocam" >
+          <img class="anhht" src="https://i.vietnamdoc.net/data/image/Icon/icon200/Mon-Hoa5.png" alt="Đề thi tuyển sinh vào lớp 10 môn Hóa học THPT Chuyên Sư Phạm Hà Nội năm học 2019 - 2020 (chuyên Hóa)">
+          <div class="card-body">
+            
+            <span class="app-description">Đề thi thử THPT Quốc gia môn Ngữ văn năm 2019 Sở GD&amp;ĐT Nam Định</span>
+           </div>
+        </div>
+
+        <div class=" col-xs-12 col-md-2 mocam " >
+          <img class="anhht" src="https://i.vietnamdoc.net/data/image/Icon/icon200/Mon-Vat-Li3.png" alt="Đề thi tuyển sinh vào lớp 10 môn Vật lý THPT Chuyên Sư Phạm Hà Nội năm học 2019 - 2020 (chuyên Lý)">
+          <div class="card-body">
+            
+            <span class="app-description">Đề thi thử THPT Quốc gia môn Ngữ văn năm 2019 Sở GD&amp;ĐT Nam Định</span>
+           </div>
+        </div>
+
+        <div class=" col-xs-12 col-md-2 mocam " >
+          <img class="anhht" src="https://i.vietnamdoc.net/data/image/Icon/icon200/Mon-Ngu-Van3.png " class="anh4" alt="Tập đọc lớp 3: Nhớ Việt Bắc">
+          <div class="card-body">
+            
+            <span class="app-description">Đề thi thử THPT Quốc gia môn Ngữ văn năm 2019 Sở GD&amp;ĐT Nam Định</span>
+           </div>
+        </div>
+
+        <div class=" col-xs-12 col-md-2 mocam " >
+          <img class="anhht" src="https://i.vietnamdoc.net/data/image/Icon/icon200/Mon-Tieng-Anh5.png" alt="Đáp án đề thi tuyển sinh lớp 10 chuyên Tiếng Anh của trường THPT Chuyên Sư phạm Hà Nội">
+          <div class="card-body">
+            
+            <span class="app-description">Đề thi thử THPT Quốc gia môn Ngữ văn năm 2019 Sở GD&amp;ĐT Nam Định</span>
+           </div>
+        </div>
+
+        <div class=" col-xs-12 col-md-2 mocam " >
+          <img class="anhht" src="https://i.vietnamdoc.net/data/image/Icon/icon200/Mon-Tieng-Anh5.png" alt="Đáp án đề thi tuyển sinh lớp 10 chuyên Tiếng Anh của trường THPT Chuyên Sư phạm Hà Nội">
+          <div class="card-body">
+            
+            <span class="app-description">Đề thi thử THPT Quốc gia môn Ngữ văn năm 2019 Sở GD&amp;ĐT Nam Định</span>
+           </div>
+        </div>
+
+        <div class=" col-xs-12 col-md-2 mocam " >
+          <img class="anhht" src="https://i.vietnamdoc.net/data/image/Icon/icon200/Mon-Tieng-Anh5.png" alt="Đáp án đề thi tuyển sinh lớp 10 chuyên Tiếng Anh của trường THPT Chuyên Sư phạm Hà Nội">
+          <div class="card-body">
+            
+            <span class="app-description">Đề thi thử THPT Quốc gia môn Ngữ văn năm 2019 Sở GD&amp;ĐT Nam Định</span>
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  
+<footer class="footer" style=" border-top: 1px solid #03a9f4;">
+  <div>
+    <div class="container" >
+      <div class="row">
+        <div class="col-md-2 col-xs-6 col-sm-2">
+          <ul  >
+            <li><h4> Giới thiệu</h4></li>
+            <li>Về chúng tôi</li>
+            <li>Hướng dẫn sử dụng</li>
+            <li>Liên hệ</li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-xs-6 col-sm-2 ">
+          <ul  >
+            <li><h4> Chính sách</h4></li>
+            <li>Điều khoản sử dụng</li>
+            <li>Chính sách bảo mật</li>
+            <li>DMCA</li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-xs-6 col-sm-2 ">
+          <ul  >
+            <li><h4> Theo dõi chúng tôi</h4></li>
+            <li>Facebook</li>
+            <li>Youtube</li>
+            <li>Twitter</li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-xs-6 col-sm-2 ">
+          <ul  >
+            <li><h4> Tải ứng dụng</h4></li>
+            <li>Học tiếng Anh</li>
+            <li>Giải bài tập</li>
+            <li>Toán tiểu học</li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-xs-6 col-sm-2 ">
+          <ul  >
+            <li><h4> Chứng nhận </h4></li>
+            <li><img src="img/cn.png"></li>
+            
+          </ul>
+        </div>
+        <div class="col-md-2 col-xs-6 col-sm-2 "></div>
+      </div>
+    </div>
+
+    <div class="container footer-nav" style="border-top: 1px solid #eee;" >
+        <div class="copyright">
+          <span>Chịu trách nhiệm nội dung: Lê Ngọc Lam.</span>
+          <span>©2019 Công ty Cổ phần Mạng trực tuyến
+            <a href="http://meta.vn" rel="nofollow" target="_blank">META</a>
+          </span> 
+          <span>Địa chỉ: 56 Duy Tân, Dịch Vọng Hậu, Cầu Giấy, Hà Nội.</span> 
+          <span>Điện thoại: <a href="tel:+842422426188">024 2242 6188</a>. Email: info@meta.vn.</span>
+          <span>Giấy phép số 366/GP-BTTTT do Bộ TTTT cấp.</span> 
+        </div>
+    </div>
+
+  </div>
+</footer>
+
+
+  </body>
+
+  
+</html>
